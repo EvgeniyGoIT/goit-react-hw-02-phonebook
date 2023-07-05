@@ -79,3 +79,4 @@ export const App = () => {
     </div>
   );
 };
+console.log('Hello world');
