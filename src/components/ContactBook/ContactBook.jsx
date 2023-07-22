@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import ContactForm from './ContactBook/ContactForm';
-import ContactList from './ContactBook/ContactList';
-import Filter from './ContactBook/Filter';
-import '../index.css';
+import ContactForm from '../ContactForm/ContactForm';
+import ContactList from '../ContactList/ContactList';
+import Filter from '../Filter/Filter';
 
 class ContactBook extends Component {
   state = {
@@ -64,19 +63,5 @@ class ContactBook extends Component {
   }
 }
 
-export const App = () => {
-  return (
-    <div
-      style={{
-       display: 'grid',
-        placeItems: 'center',
-        height: '100vh',
-        fontSize: 40,
-        color: "#010101",
-      }}
-    >
-      <ContactBook />
-    </div>
-  );
-};
-console.log('Hello world');
+
+export default ContactBook;
